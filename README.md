@@ -112,9 +112,13 @@ sns.catplot(data=df,col="Survived",x="Gender",hue="Pclass",kind="count")
 numerical_df = df.select_dtypes(include=np.number)
 corr = numerical_df.corr()
 sns.heatmap(corr, annot=True)
-```.
-![image](https://github.com/user-attachments/assets/0d70c3c5-e04b-4f95-a50a-2634cc5cc26e)
+```
+![image](https://github.com/user-attachments/assets/892e42f3-e064-4248-a034-ba28a1a4b347)
 
+```
+sns.pairplot(df)
+```
+![image](https://github.com/user-attachments/assets/424cfaba-aa5e-4b84-a248-c5d4ccf84754)
 
 # RESULT
-        <<INCLUDE YOUR RESULT HERE>>
+Thus, the Exploratory Data Analysis on the given data set was performed successfully.
